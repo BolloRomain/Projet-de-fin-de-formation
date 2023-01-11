@@ -46,3 +46,7 @@ Mode nuit ;
 ## Etape 3 
 
 5 jours sur la corrections des erreurs possible et le styles.
+
+## Etape finale
+
+Démonstration du Projet.
