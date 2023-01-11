@@ -1,0 +1,21 @@
+@use './../../vars';
+
+.dice-403 {
+  background-image: url("../../assets/images/background_forbidden_403.jpg");
+  @extend %backgroundImageSettings;
+}
+
+.card-background-403 {
+  @extend %seeThroughBlackBoxes;
+  @extend %boxShadow;
+}
+
+.header-title-403 {
+  @extend %superTitres;
+}
+
+.paragraph-403 {
+  font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  font-size: 1.2rem;
+}

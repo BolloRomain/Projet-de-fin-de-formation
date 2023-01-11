@@ -1,0 +1,47 @@
+@use './../../vars';
+
+.signup-login {
+  &-page {
+    background-image: url("../../assets/images/background_wooden_pier_boat.jpg");
+    @extend %backgroundImageSettings;
+  }
+  &-box {
+    @extend %seeThroughBlackBoxes;
+  }
+}
+.signup-avatar {
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+
+
+.container-buttons {
+  display: block;
+}
+
+.buttonSubmit {
+  @extend %buttonTheme;
+  @extend %links;
+  display: block;
+  margin: 0 auto 0;
+  font-size: 1.5em;
+  box-shadow: 3px 3px rgba(31, 2, 250, 0.2)
+}
+
+.toggleSign-in-up {
+  display: block;
+  font-size: 1.2rem;
+  color: vars.$gold-color;
+  background-color: transparent;
+  border-color: vars.$gold-color;
+  border-radius: 5em;
+  box-shadow: 3px 3px rgba(31, 2, 250, 0.2);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.link {
+  @extend %links;
+  color: white;
+}

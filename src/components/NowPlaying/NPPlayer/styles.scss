@@ -1,0 +1,27 @@
+@use './../../../vars';
+
+
+.np-player {
+  &-page {
+    overflow: auto;
+  }
+
+  &-box {
+    @extend %seeThroughBlackBoxes;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-color: vars.$gold-color;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &-page {
+      overflow: auto;
+    }
+
+    &-box {
+      height: 70vh;
+      width: 100vw;
+    }
+  }
+
+}

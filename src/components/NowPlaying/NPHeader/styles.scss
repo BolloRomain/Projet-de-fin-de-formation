@@ -1,0 +1,24 @@
+@use './../../../vars';
+
+.npheader {
+	&-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
+    &-title {
+      color: vars.$gold-color;
+      font-family: vars.$standard-font-family;
+      text-align: center;
+    }
+	}
+
+  @media screen and (max-width: 900px) {
+    &-container {
+      &-title {
+        font-size: 1.5em;
+      }
+    }
+  }
+}

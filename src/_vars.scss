@@ -1,0 +1,153 @@
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
+
+// <3 VARIABLES
+$blue: #001a5c;
+$gold-color: #ECC418;
+$supertitles-color: rgb(213, 127, 22);
+$standard-text-color: #FFF;
+$standard-font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+sans-serif;
+
+// <3 PLACEHOLDER SELECTORS
+
+%buttonTheme {
+  background: linear-gradient(0.9turn, $gold-color, #FFF);
+  border-color: transparent;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(10, 69, 11, 0.691);
+  font-size: 1.2em;
+  text-align: center;
+  font-family: $standard-font-family;
+  color: $blue;
+}
+
+%links {
+  color: #001a5c;
+  &:active {
+    color: rgb(255, 242, 207);
+    font-size: 1.4em;
+  }
+}
+
+%textColor {
+  color: rgb(119, 72, 14);
+}
+
+%boxShadow {
+  box-shadow: 10px 10px 1px rgba(174, 97, 43, 0.678);
+}
+
+%superTitres {
+  position: relative;
+  color: $gold-color;
+  font-size: 3.5em;
+  text-align: center;
+  margin: 2em auto 2em auto;
+  padding-top: 2em;
+  font-family: $standard-font-family;
+  text-transform: capitalize;
+  text-shadow: 2px 3px 1px rgba(24, 22, 22, 0.22);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $gold-color;
+    transform-origin: bottom;
+    transition: transform 5s ease-out;
+  }
+  &:hover::after {
+    transform: scaleX(0.1);
+    transform-origin: bottom;
+  }
+}
+
+%seeThroughBlackBoxes {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+  color: $standard-text-color;
+  font-weight: bold;
+  border: 3px solid $gold-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+%backgroundImageSettings {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+%buttonTransparent {
+  background: linear-gradient(0.9turn, $gold-color, #ffffff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'Aref ruuqa';
+  font-size: 1.6em;
+  font-weight: 800;
+
+  border-radius: 10px;
+  border: $gold-color solid 1px;
+  margin-top: 10px;
+  
+  &:active {
+    font-size: 1.4em;
+  }
+}
+
+%buttonTransparentLight {
+  background: linear-gradient(0.9turn, #000000, $blue);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'Aref ruuqa';
+  font-size: 1.6em;
+  font-weight: 800;
+
+  border-radius: 10px;
+  border: #001a5c solid 1px;
+  margin-top: 10px;
+  
+  &:active {
+    font-size: 1.4em;
+  }
+}
+
+%buttonTransparentDark {
+  background: linear-gradient(0.9turn, $gold-color, #ffffff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'Aref ruuqa';
+  font-size: 1.6em;
+  font-weight: 800;
+
+  border-radius: 10px;
+  border: $gold-color solid 1px;
+  margin-top: 10px;
+  
+  &:active {
+    font-size: 1.4em;
+  }
+}

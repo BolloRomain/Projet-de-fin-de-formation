@@ -1,0 +1,21 @@
+@use './../../vars';
+
+.dice-404 {
+  background-image: url("../../assets/images/background_space_whale_404.jpg");
+  @extend %backgroundImageSettings;
+}
+
+.card-background-404 {
+  @extend %seeThroughBlackBoxes;
+  @extend %boxShadow;
+}
+
+.header-title-404 {
+  @extend %superTitres;
+}
+
+.paragraph-404 {
+  font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  font-size: 1.2rem;
+}

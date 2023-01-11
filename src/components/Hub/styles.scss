@@ -1,0 +1,30 @@
+@use './../../vars';
+
+.players-hub {
+  &-page {
+    background-image: url("../../assets/images/background_aurora_dark.jpg");
+    @extend %backgroundImageSettings;
+    &-dark {
+      background-image: url("../../assets/images/background_aurora_borealis_waterfall.jpg");
+      @extend %backgroundImageSettings;
+    }
+  }
+  &-box {
+    @extend %seeThroughBlackBoxes;
+    overflow-y: scroll;
+    max-height: 70vh;
+  }
+}
+.hub-images {
+    max-width: 100%;
+    height: 10vh;
+    width: 10vh;
+}
+
+.hub-button {
+  @extend %buttonTransparent;
+}
+
+.box-hub {
+  margin: 1.7rem;
+}

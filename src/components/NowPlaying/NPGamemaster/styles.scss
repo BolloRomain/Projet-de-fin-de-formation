@@ -1,0 +1,86 @@
+@use './../../../vars';
+
+
+.np-gamemaster {
+  &-page {
+    background-image: url("../../../assets/images/background_dragon_space.jpg");
+    @extend %backgroundImageSettings; 
+    overflow: auto;
+  }
+
+  &-box {
+    @extend %seeThroughBlackBoxes;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-color: vars.$gold-color;
+  }
+
+  &-create-button {
+    @extend %buttonTheme;
+    font-size: 1.3em;
+  }
+
+  &-checkbox {
+    text-align: center;
+    &-label {
+      color: vars.$standard-text-color;
+      font-family: vars.$standard-font-family;
+      font-size: 1.5em;
+    }
+    &-input {
+      height:1.2em;
+      width:1em;
+      margin: 0 1rem;
+      margin-bottom: 1rem;
+      cursor:pointer;
+    }
+  }
+
+  &-description {
+    color: vars.$standard-text-color;
+    font-family: vars.$standard-font-family;
+    padding-bottom: 1%;
+    white-space: pre-line;
+  }
+
+  &-divide {
+    color: rgba(61, 55, 49, 0.721);
+    margin: 20px 10%;
+  }
+
+  &-links {
+    @extend %links;
+  }
+  
+  &-save-button {
+    @extend %buttonTheme;
+    font-size: 1.3em;
+    width: 130px;
+    margin: 5%;
+  }
+
+  &-subtitle {
+    font-family: vars.$standard-font-family;
+    color: vars.$gold-color;
+    font-size: 1.5rem;
+    padding: 1% 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    &-page {
+      overflow: auto;
+    }
+
+    &-box {
+      height: 70vh;
+      width: 100vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    &-subtitle {
+      display: block;
+    }
+  }
+}

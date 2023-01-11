@@ -1,0 +1,10 @@
+@use './../../vars';
+
+.nowplaying {
+	background-image: url("../../assets/images/background_dragon_space.jpg");
+	@extend %backgroundImageSettings;
+	&-dark {
+		background-image: url("../../assets/images/background_dragon_dark.jpg");
+		@extend %backgroundImageSettings;
+	}
+}

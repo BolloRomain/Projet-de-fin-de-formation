@@ -1,0 +1,72 @@
+@use './../../vars';
+
+.user-new-warudo {
+	&-page {
+    background-image: url("../../assets/images/background_dragon_space.jpg");
+    @extend %backgroundImageSettings;
+    overflow: auto;
+    &-dark {
+      background-image: url("../../assets/images/background_dragon_dark.jpg");
+    @extend %backgroundImageSettings;
+    overflow: auto;
+    }
+  }
+	  &-box-characters {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid vars.$gold-color;
+      position: absolute;
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      margin: auto;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 4rem;
+	}
+}
+
+.archetype {
+  // HIDDEN RADIO BUTTON
+  &-radio {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + .archetype-card {
+      outline: 3px solid vars.$gold-color;
+    }
+  }
+  &-label {
+    &-description {
+      overflow: hidden;
+    }
+  }
+}
+
+.persoCreateTitle{
+	@extend %superTitres;
+	&-h2 {
+		margin: 5% 0;
+	}
+	&-section {
+		margin: 2% 0;
+	}
+}
+
+.worldCreateButton {
+  @extend %buttonTheme;
+  @extend %links;
+  font-size: 1.6em;
+  margin-top: 3em;
+}
+
+.saveButton {
+	@extend %buttonTheme;
+	zoom:150%
+}
+
+.ui.image.images-class {
+  background-color: black;
+}

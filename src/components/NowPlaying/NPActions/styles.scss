@@ -1,0 +1,45 @@
+@use './../../../vars';
+
+
+.np-actions {
+  &-checkbox {
+    text-align: center;
+    &-label {
+      color: vars.$standard-text-color;
+      font-family: vars.$standard-font-family;
+      font-size: 1.5em;
+    }
+    &-input {
+      height:1.2em;
+      width:1em;
+      margin: 0 1rem;
+      margin-bottom: 1rem;
+      cursor:pointer;
+    }
+  }
+
+  &-links {
+    @extend %links;
+  }
+
+  &-save-button {
+    @extend %buttonTheme;
+    font-size: 1.3em;
+    width: 130px;
+    margin: 5%;
+  }
+
+  &-subtitle {
+    font-family: vars.$standard-font-family;
+    color: vars.$gold-color;
+    font-size: 1.5rem;
+    padding: 1% 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    &-subtitle {
+      display: block;
+    }
+  }
+
+}

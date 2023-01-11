@@ -1,0 +1,47 @@
+@use './../../vars';
+
+.rules {
+  &-main {
+    background-image: url("../../assets/images/background_mouse_light.jpg");
+    @extend %backgroundImageSettings;
+    &-dark {
+      background-image: url("../../assets/images/background_mouse_in_barn.jpg");
+      @extend %backgroundImageSettings;
+    }
+  }
+  &-links {
+    color: rgb(213, 127, 22);
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+    font-size: 2rem;
+    padding: 1rem auto 1rem auto;
+
+    &:hover {
+      color: vars.$gold-color;
+    }
+  }
+
+  &-h1 {
+    @extend %superTitres;
+  }
+
+  &-h2 {
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+    padding-bottom: 100px;
+  }
+
+  &-p {
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  }
+
+  &-first-container {
+    &-section {
+      @extend %seeThroughBlackBoxes;
+      @extend %boxShadow;
+      overflow-y: scroll;
+      max-height: 70vh;
+    }
+  }
+}

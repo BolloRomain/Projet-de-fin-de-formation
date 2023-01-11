@@ -1,0 +1,58 @@
+@use './../../vars';
+
+.homepage {
+  scroll-behavior: smooth;
+
+  &-links {
+    @extend %buttonTransparent;
+    color: rgb(213, 127, 22);
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+    font-size: 2rem;
+    padding: .5%;
+    margin: 1%;
+
+    &:hover {
+      color: vars.$gold-color;
+    }
+  }
+
+  &-main {
+    height: 200vh
+  }
+
+  &-h1 {
+    @extend %superTitres;
+  }
+
+  &-h2 {
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  }
+
+  &-p {
+    font-family: 'Aref Ruqaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  }
+
+  &-first-container {
+    background-image: url("../../assets/images/background_light_mode.jpg");
+    @extend %backgroundImageSettings;
+
+    &-section {
+      @extend %seeThroughBlackBoxes;
+      @extend %boxShadow;
+    }
+  }
+
+  &-second-container {
+    background-image: url("../../assets/images/background_dark_mode.jpg");
+    @extend %backgroundImageSettings;
+  
+    &-section {
+      @extend %seeThroughBlackBoxes;
+      @extend %boxShadow;
+      top: 150%;
+    }
+  }
+}

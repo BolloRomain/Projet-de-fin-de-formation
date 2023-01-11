@@ -1,0 +1,47 @@
+@use './../../vars';
+
+.user-game-warudo-create {
+	&-page {
+		background-image: url("../../assets/images/background_dragon_space.jpg");
+		@extend %backgroundImageSettings;
+		overflow: auto;
+    		&-dark {
+		  background-image: url("../../assets/images/background_dragon_dark.jpg");
+		  @extend %backgroundImageSettings;
+		  overflow: auto;
+		}
+	  
+	}
+	&-box {
+		//  @extend %seeThroughBlackBoxes;
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0, 0, 0, 0.7); /* Black w/opacity/see-through */
+		color: white;
+		font-weight: bold;
+		border: 3px solid vars.$gold-color;
+		position: absolute;
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		margin: auto;
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 4rem;
+	}
+	&-gameCreateTitle{
+		@extend %superTitres;
+		&-h2 {
+			margin: 5% 0;
+		}
+		&-section {
+			margin: 2% 0;
+		}
+	}
+	
+	&-gameCreateButton {
+	  @extend %buttonTheme;
+	  @extend %links;
+	  font-size: 1.6em;
+	  margin-top: 3em;
+	}
+}
