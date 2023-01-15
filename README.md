@@ -12,7 +12,7 @@ O’Dice & Dragons permet de jouer à un jeu de rôle au tour par tour. Étant c
 
 ## Besoins
 
-O’Dice & Dungeons répond à des demandes spécifiques liées à l’univers du jeu rôle, notamment:
+O’Dice & Dragons répond à des demandes spécifiques liées à l’univers du jeu rôle, notamment:
 La possibilité de jouer entièrement en ligne; 
 La possibilité de rejoindre d’autres joueurs sans se soucier de leur localisation ;
 Une plus grande flexibilité dans le temps grâce à un système de jeu au tour par tour ;
