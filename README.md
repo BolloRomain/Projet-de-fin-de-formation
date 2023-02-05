@@ -21,18 +21,31 @@ Pouvoir jouer de manière asynchrone.
 ## Fonctionnalités
 
 Inscription d’un joueur et enregistrement dans la base de données ;
+
 Personnalisation du profil avec un nom d’utilisateur et un avatar ;
+
 Création d’un personnage avec un choix de nom libre et une classe à sélectionner ;
+
 Rejoindre une partie à partir d’une liste;
+
 Reprendre une partie en cours ;
+
 Jouer au tour par tour ;
+
 Jouer de manière asynchrone ;
+
 Choisir une action selon la scène créée par le Maître du Jeu ;
+
 Sauvegarde automatique de la progression de la partie ;
+
 Quitter une partie ;
+
 Création d’un monde avec un choix de nom et description libre ;
+
 Impossibilité d’édition d’un monde utilisé dans une partie en cours ;
+
 Créer une partie et devenir Maître du Jeu en choisissant un de ses mondes ;
+
 Mode nuit ;
 
 ## Etape 1
