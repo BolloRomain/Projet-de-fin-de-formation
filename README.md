@@ -41,7 +41,7 @@ Mode nuit ;
 
 ## Etape 2
 
-5 jours sur la mise en place de toutes les focntionnalités.
+5 jours sur la mise en place de toutes les fonctionnalités.
 
 ## Etape 3 
 
